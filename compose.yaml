@@ -14,9 +14,9 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./mongodb/data/mongodb_data:/data/db
-      - ./mongodb/data/configdb:/data/configdb
-      - ./mongodb/data/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      - ./data/mongodb_data:/data/db
+      - ./data/configdb:/data/configdb
+      - ./data/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
     networks:
       - mongo-net
 
